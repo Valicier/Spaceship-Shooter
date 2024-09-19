@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://ul2lrhvdbpn6"]
+
+[ext_resource type="Texture2D" uid="uid://pdcw1bcsknyb" path="res://Arrow.png" id="1_np0tu"]
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Speed" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Speed: 0 m/s"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Rot Speed" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Rot Speed: 0 m/s"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Fuel" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fuel: 0 kg"
+fit_content = true
+autowrap_mode = 0
+
+[node name="dv" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "dv: 0 m/s"
+fit_content = true
+autowrap_mode = 0
+
+[node name="v_vec" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "v_vec: (0,0)"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Arrow" type="Sprite2D" parent="."]
+position = Vector2(576, 40)
+scale = Vector2(0.390625, 0.390625)
+texture = ExtResource("1_np0tu")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsqdcrrqamn2c"]
+
+[ext_resource type="PackedScene" uid="uid://8d2xks6ctflf" path="res://background.tscn" id="1_4rx1x"]
+[ext_resource type="PackedScene" uid="uid://7lw8vbxq51pf" path="res://enemy_rocket.tscn" id="3_7iwwj"]
+[ext_resource type="PackedScene" uid="uid://ci5pupg8424ue" path="res://rocket_rigid.tscn" id="4_haqbx"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_4rx1x")]
+
+[node name="Rocket Rigid" parent="." instance=ExtResource("4_haqbx")]
+position = Vector2(576, 324)
+
+[node name="Enemy Rocket" parent="." instance=ExtResource("3_7iwwj")]
+position = Vector2(179, 324)

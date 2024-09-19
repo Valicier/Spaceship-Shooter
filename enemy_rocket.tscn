@@ -1,0 +1,106 @@
+[gd_scene load_steps=2 format=3 uid="uid://7lw8vbxq51pf"]
+
+[ext_resource type="Script" path="res://enemy_rocket.gd" id="1_yxanh"]
+
+[node name="Enemy Rocket" type="RigidBody2D"]
+gravity_scale = 0.0
+center_of_mass_mode = 1
+center_of_mass = Vector2(0, 13)
+linear_damp_mode = 1
+angular_damp_mode = 1
+script = ExtResource("1_yxanh")
+
+[node name="Body" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -20.0
+offset_right = 10.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0050463
+metadata/_edit_use_anchors_ = true
+
+[node name="Rear Thruster" type="ColorRect" parent="." groups=["Forward Thruster"]]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = 20.0
+offset_right = 5.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0050463
+color = Color(1, 0.27451, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Left Thruster" type="ColorRect" parent="." groups=["Left Thruster"]]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0050463
+color = Color(1, 0.27451, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Right Thruster" type="ColorRect" parent="." groups=["Right Thruster"]]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0050463
+color = Color(1, 0.27451, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Left Correctional" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -1.0
+offset_right = -10.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0050463
+color = Color(1, 0.27451, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Right Correctional" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -1.0
+offset_right = 12.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0050463
+color = Color(1, 0.27451, 1, 1)
+metadata/_edit_use_anchors_ = true

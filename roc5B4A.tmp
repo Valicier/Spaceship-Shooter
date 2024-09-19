@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci5pupg8424ue"]
+
+[ext_resource type="Script" path="res://rocket_rigid.gd" id="1_wdnup"]
+
+[node name="Rocket Rigid" type="RigidBody2D"]
+gravity_scale = 0.0
+linear_damp_mode = 1
+angular_damp_mode = 1
+script = ExtResource("1_wdnup")
+
+[node name="Body" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -20.0
+offset_right = 10.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Rear Thruster" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = 20.0
+offset_right = 5.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.27451, 1, 1)
+
+[node name="Left Thruster" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 8.0
+offset_right = -10.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.27451, 1, 1)
+
+[node name="Left Thruster2" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_right = -10.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.27451, 1, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
